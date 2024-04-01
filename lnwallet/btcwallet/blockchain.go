@@ -37,7 +37,7 @@ func (b *BtcWallet) GetBestBlock() (*chainhash.Hash, int32, error) {
 // creates the target pkScript.
 //
 // This method is a part of the lnwallet.BlockChainIO interface.
-func (b *BtcWallet) GetUtxo(op *wire.OutPoint, pkScript []byte,
+func (b *BtcWallet) /* GetUtxo */(op *wire.OutPoint, pkScript []byte,
 	heightHint uint32, cancel <-chan struct{}) (*wire.TxOut, error) {
 
 	switch backend := b.chain.(type) {
