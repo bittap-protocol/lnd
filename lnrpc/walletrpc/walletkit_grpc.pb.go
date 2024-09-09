@@ -278,6 +278,7 @@ type walletKitClient struct {
 }
 
 func NewWalletKitClient(cc grpc.ClientConnInterface) WalletKitClient {
+	log.Info("cc")
 	return &walletKitClient{cc}
 }
 
